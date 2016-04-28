@@ -76,8 +76,23 @@ function mouse_over(id){
 		}
 	}
 }
-console.log(homepage_fn)
 
 // mouse_over('about_us')
 
 // mouse_over('contact_us')
+var sublist = document.querySelector(".sub_list")
+// var sublist1 = document.querySelector(".sub_list1")
+
+menulist[0].onmouseover = function(e){
+			sublist.style.display = 'block'			
+			e.stopPropagation();
+		}
+sublist.onmouseout = function(){
+			sublist.style.display = 'none'
+		}
+
+
+
+// sublist1.onmouseout = function(i){
+// 			sublist1.style.display = 'none'
+// 		}
