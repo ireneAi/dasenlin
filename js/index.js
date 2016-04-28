@@ -6,7 +6,7 @@
 	var index_href = window.location.href;
 	var iframe = document.getElementsByTagName('iframe');
 	var menulist = document.getElementById('menu').getElementsByTagName('li');
-	var num = index_href.indexOf('?');
+	var num = index_href.lastindexOf('?');
 // 获取href参数
 var newCs = index_href.slice((function(){
 	if(num == -1) {num=index_href.length}
@@ -64,7 +64,6 @@ function set_click(newCs,num){
 	menulist[num].className = 'in';
 }
 
-var mouse_move=[];
 function mouse_over(id){
 	var mouse = id.contentWindow.document.getElementsByName("mouse");
 	if(mouse){
