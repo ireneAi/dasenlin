@@ -6,7 +6,7 @@
 	var index_href = window.location.href;
 	var iframe = document.getElementsByTagName('iframe');
 	var menulist = document.getElementById('menu').getElementsByTagName('li');
-	var num = index_href.lastindexOf('?');
+	var num = index_href.lastIndexOf('?');
 // 获取href参数
 var newCs = index_href.slice((function(){
 	if(num == -1) {num=index_href.length}
