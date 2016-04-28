@@ -1,0 +1,11 @@
+subpage_15:
+
+文件夹内子页面：15个平台页面内容
+
+subpage_about:
+
+集团公司介绍子页面
+
+subpage_mode:
+
+公司模式介绍页面

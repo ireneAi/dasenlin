@@ -1,0 +1,98 @@
+﻿/*
+	@ 2016/4/19
+	@ irene 
+ */ 
+
+/*header*/
+header{width:100%;height: 90px;position: absolute;top:0;left:0;z-index: 999;margin-top: 15px}
+.logo {height: 90px;display: block; float: left;line-height: 90px;}
+.logo img{vertical-align:middle;margin-left: 20px;}
+header nav {float: right;height: 90px;padding-top:33px;}
+header nav li{float: left;display: inline-block;padding:0 18px;}
+header nav li a{text-shadow:1px 1px 1px #fff; transition:all 0.2s ease;color:#000;height:24px;font-size: 16px; display: block;padding:0 10px;border:3px solid transparent;border-top:0;border-bottom: 0;}
+header nav li.in a{ border:3px solid #8e181f;border-top:0;border-bottom: 0;background: #fff;box-shadow: 0 2px 2px #444;}
+header nav li a:hover{ color:#8e181f;}
+
+/*main*/
+main,iframe{position: fixed;left:0; top:5px;bottom:0;right:0;width:100%;height: 100%;transition:all 0.2s ease;}
+iframe{opacity:0;transition:all .4s ease-in-out;}
+iframe.on {opacity: 1;width:100%;}
+
+/*集团介绍*/
+body.about_us{border:0;}
+#about_us {min-height:740px;background: url(../images/about_us.jpg) no-repeat top center; background-size:auto 100% ; }
+.about_us .body_main {position: relative;}
+.main_text {margin:200px 0 0 190px;width:480px;line-height: 32px;color:#000;font-size: 16px;text-align:Justify;
+text-justify:inter-ideograph;position: relative;}
+.main_text p{margin-bottom: 8px;text-indent: 32px;}
+.main_text a{float: right;color: #8e181f;text-decoration: underline;}
+.about_us .title{position: absolute;left:-40px;top:-50px;}
+.about_us .img{position: absolute;right:-520px;top:-20px;}
+
+/*公司平台*/
+#pingtai {min-height:740px;background: url(../images/pingtai.jpg) no-repeat top center; background-size:auto 100% ; }
+ body.pingtai{border:0;}
+.pingtai .title{position: absolute;top:160px;left:120px;}
+.pingtai_box {width:1160px;height: 434px;background: url(../images/pingtai_bc.png) no-repeat;margin:150px 0 0 80px;}
+.pingtai_box li a{color:#8e181f;padding:8px 5px;text-align:center;transform:scale(0);text-decoration:none;display: inline-block;height: 100%;width:100%;transition:all .2s ease;}
+.pingtai_box:hover li a{transform:scale(1);}
+.pingtai_box ul {display:block; margin-left:120px;padding-top:30px;height: 430px;transform:scale(0);transition:all .2s ease;}
+.pingtai_box:hover ul {transform:scale(1);}
+.pingtai_box li {cursor:pointer;transition:all .2s ease;opacity:0;float:left;display: block;height: 120px;width:185px;margin:5px 5px;background: rgba(255,255,255,.9);box-shadow: 0 2px 3px #555;}
+.pingtai_box:hover li {opacity: 1;}
+.pingtai_box li a:hover{background: #8e181f;color:#fff;padding:5px 5px;}
+.pingtai_box li a img{width:70px;height: 57px;}
+.pingtai_box li a h3{height: 26px;line-height: 22px;text-align: center;font-size: 16px;}
+.pingtai_box li a:hover::after{content: "查看详细信息";text-decoration:underline;display: block;color:#fff;font-size: 14px;margin-top:-5px;}
+.pingtai_box li a:hover h3{height: 30px;line-height: 24px;text-overflow:ellipsis;overflow: hidden;white-space: nowrap;}
+
+/*商业模式*/
+body.mode{border:0;}
+#mode {min-height:740px;background: url(../images/mode_bc.png) no-repeat top center; }
+.mode .link {width:730px;margin: 335px auto 0;padding-left: 20px }
+.mode .link li{display: inline-block;width:155px;height: 24px;margin-right: 18px; }
+.mode .link a{transition:all .2s ease;display: block;width:155px;height: 30px;line-height:30px;padding:0 8px;background:#d96e75;border-radius: 5px;color: #fff; }
+.mode .link a:hover{background: #8e181f; text-decoration:none;}
+.mode .link a:before{content:'';display: inline-block;height: 20px;width:20px;background: url(../images/nav_mode.png) no-repeat;}
+
+/*联系我们*/
+body.contact_us{border:0;}
+#contact_us {min-height:740px;background: url(../images/contact_us.jpg) no-repeat top center; background-size:auto 100% ; }
+.contact_us .body_main {position: relative;}
+
+.contact_us .contact_text {position: absolute;left:110px;}
+.address_box {position:relative;border:3px solid #c2212b;border-radius: 20px;margin:258px 0 0 245px; background: rgba(255,255,255,.9);width:748px;height: 258px;box-shadow: 0 0 10px #444;}
+.address_box .map {position:absolute;right:-70px;top:-50px;padding:5px;background: #fff;overflow: hidden;height: 350px;width:350px;border:1px solid #ccc;border-radius: 50% 50%;box-shadow: 0 0 10px #fff;}
+.address_box .map img{width:100%;height: 100%;border:5px solid #fff;border-radius: 50% 50%}
+.address_box address{font-style: normal;padding-left: 40px}
+.address_box address h2{font-size: 24px;color:#8e181f;height: 35px;margin:35px 0 10px;}
+.address_box address p{font-size: 16px;height: 22px;margin-bottom: 8px;}
+
+/*公司历程*/
+body.process{border:0;}
+#process {min-height:740px;background: url(../images/process.jpg) no-repeat top center; }
+.process_info {transition:all .4s ease; height: 180px;width:320px;height: auto;padding-left: 20px;position: absolute;}
+.process .title{position: absolute;top:130px;left:160px;}
+.process_info .innertext{width:300px;height:0;overflow: hidden;transition:all .2s ease;margin:2px 0;}
+.process_info:hover .innertext{margin:8px 0;height: auto;}
+.process_info h3{font-size: 20px; color:#8e181f;}
+.process_info p{width:100%;padding:10px;line-height:25px;height: auto;font-size: 16px;background: rgba(0,0,0,.1);margin-bottom: 5px;}
+.process_info h4{font-size: 16px;height: 27px; }
+.process_info h4:before{content: '';display: inline-block;margin-left:-25px;vertical-align:-3px;width:20px;height: 20px;margin-right: 5px;background: url(../images/nav.png) no-repeat;}
+.process_info span{font-size: 14px;color:#666; }
+.process_info strong{color:#8e181f;font-weight: normal; }
+.process1 {top:270px;left:220px;}
+.process1:hover {top:200px;}
+.process2 {top:360px;left:510px;height: 180px;}
+.process2:hover {top:240px;}
+.process3 {top:460px;left:780px;height: 300px;}
+.process3:hover {top:230px;}
+.process3 .innertext{margin-left: -80px;}
+.process3:hover .innertext{margin-left: -80px;}
+.process4 {top:450px;left:1050px;height: 160px;}
+.process4:hover {top:320px;}
+.process4 .innertext{margin-left:-70%;transition:height .3s ease-in-out;}
+.process4:hover .innertext{margin-left:-70%;height: auto;}
+
+
+footer{position: fixed;}
