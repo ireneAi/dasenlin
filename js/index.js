@@ -41,8 +41,10 @@ switch(newCs){
 	var index = 0;		
 	iframe[index].className = 'on'
 	iframe[index].style.zIndex = indexnum;	
-	var homepage = setInterval(homepage_fn,4000)
-	function homepage_fn(){						
+	var homepage = setInterval(homepage_fn,4000)	
+	break;
+}
+function homepage_fn(){						
 		index++;
 		if(index>=iframe.length)index=0;
 		iframe_none()
@@ -50,9 +52,6 @@ switch(newCs){
 		iframe[index].className = 'on';
 		iframe[index].style.zIndex = indexnum++;
 	}
-	break;
-}
-
 function set_click(newCs,num){
 	// 清除动画
 	clearInterval(homepage)
@@ -77,6 +76,7 @@ function mouse_over(id){
 		}
 	}
 }
+console.log(homepage_fn)
 
 // mouse_over('about_us')
 
