@@ -38,7 +38,7 @@ text-justify:inter-ideograph;position: relative;}
 .pingtai_box:hover li a{transform:scale(1);}
 .pingtai_box ul {display:block; margin-left:120px;padding-top:30px;height: 430px;transform:scale(0);transition:all .2s ease;}
 .pingtai_box:hover ul {transform:scale(1);}
-.pingtai_box li {cursor:pointer;transition:all .2s ease;opacity:0;float:left;display: block;height: 120px;width:185px;margin:5px 5px;background: rgba(255,255,255,.9);box-shadow: 0 2px 3px #555;}
+.pingtai_box li {overflow:hidden;border-radius:5px;cursor:pointer;transition:all .2s ease;opacity:0;float:left;display: block;height: 120px;width:185px;margin:5px 5px;background: rgba(255,255,255,.9);box-shadow: 0 2px 3px #555;}
 .pingtai_box:hover li {opacity: 1;}
 .pingtai_box li a:hover{background: #8e181f;color:#fff;padding:5px 5px;}
 .pingtai_box li a img{width:70px;height: 57px;}
@@ -76,23 +76,23 @@ body.process{border:0;}
 .process_info .innertext{width:300px;height:0;overflow: hidden;transition:all .2s ease;margin:2px 0;}
 .process_info:hover .innertext{margin:8px 0;height: auto;}
 .process_info h3{font-size: 20px; color:#8e181f;}
-.process_info p{width:100%;padding:10px;line-height:25px;height: auto;font-size: 16px;background: rgba(0,0,0,.1);margin-bottom: 5px;}
+.process_info p{width:100%;padding:10px;border-radius: 5px;line-height:25px;height: auto;font-size: 16px;background: rgba(255,255,255,1);border:1px solid #ccc;box-shadow:0 0 8px #ccc;margin-bottom: 5px;color:#666;}
 .process_info h4{font-size: 16px;height: 27px; }
 .process_info h4:before{content: '';display: inline-block;margin-left:-25px;vertical-align:-3px;width:20px;height: 20px;margin-right: 5px;background: url(../images/nav.png) no-repeat;}
 .process_info span{font-size: 14px;color:#666; }
-.process_info strong{color:#8e181f;font-weight: normal; }
+.process_info strong{color:#000;font-weight: normal; }
 .process1 {top:270px;left:220px;}
 .process1:hover {top:200px;}
-.process2 {top:360px;left:510px;height: 180px;}
-.process2:hover {top:240px;}
+.process2 {top:360px;left:510px;height: 280px;}
+.process2:hover {top:200px;}
 .process3 {top:460px;left:780px;height: 300px;}
 .process3:hover {top:230px;}
 .process3 .innertext{margin-left: -80px;}
 .process3:hover .innertext{margin-left: -80px;}
-.process4 {top:450px;left:1050px;height: 160px;}
-.process4:hover {top:320px;}
-.process4 .innertext{margin-left:-70%;transition:height .3s ease-in-out;}
-.process4:hover .innertext{margin-left:-70%;height: auto;}
+.process4 {top:430px;left:1020px;height: 160px;}
+.process4:hover {top:290px;}
+.process4 .innertext{margin-left:-60%;transition:height .3s ease-in-out;}
+.process4:hover .innertext{margin-left:-60%;height: auto;}
 
 
 footer{position: fixed;}

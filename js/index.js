@@ -67,13 +67,14 @@ function set_click(newCs,num){
 var mouse_move=[];
 function mouse_over(id){
 	var mouse = id.contentWindow.document.getElementsByName("mouse");
-	console.log(mouse)
-	for (var i = 0; i < mouse.length; i++) {
-		mouse[i].onmouseover = function(){
-			clearInterval(homepage)
-		}
-		mouse[i].onmouseout = function(){
-			homepage = setInterval(homepage_fn,4000)
+	if(mouse){
+		for (var i = 0; i < mouse.length; i++) {
+			mouse[i].onmouseover = function(){
+				clearInterval(homepage)
+			}
+			mouse[i].onmouseout = function(){
+				homepage = setInterval(homepage_fn,4000)
+			}
 		}
 	}
 }
