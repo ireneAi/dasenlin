@@ -39,6 +39,14 @@ main::after {content:'';width:100%;clear:both;height: 1px;zoom:1;display: block;
 .right_main .right_body a{text-decoration: underline;color: #8e181f}
 .right_main .right_body img{max-width: 720px;display: block;margin:20px;}
 .right_main .right_body p strong{color:#000;}
-.logo_main {float: right;margin:0 0 20px 20px;width:215px;min-height: 210px;}
+.logo_main {margin:0 auto;width:215px;min-height: 210px;}
 .right_main .right_body .logo_main img{margin:0;height: 170px;width:215px;}
 .right_main .right_body .logo_main dd{min-height: 30px;line-height: 24px;text-align: center;margin-top: 10px;}
+
+/*ÆìÏÂ²úÒµ*/
+.qixia{display: block;margin-bottom: 10px;}
+.qixia li{width:50%;display: inline-block;float: left;}
+
+
+.right_main .f16 p {font-size: 16px;line-height: 30px;margin:8px 0;}
+.right_main img.center{margin:15px auto;}
