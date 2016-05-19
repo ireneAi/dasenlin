@@ -18,12 +18,22 @@ function iframe_none(){
 		iframe[i].className = '';
 	};
 }
+	// 高度
+	function footer_h(){
+		if(window.innerHeight < 720){
+			document.getElementsByTagName("footer")[0].style.display = "none";
+		}else{
+			document.getElementsByTagName("footer")[0].style.display = "block";
+		}
+	}
+	footer_h()
 
 var indexnum =999;
 // 判断显示哪个页面
 switch(newCs){
 	case "about_us":
-	set_click(newCs,0)	
+	set_click(newCs,0)
+	window.onresize = footer_h
 	break;
 	case "pingtai":
 	set_click(newCs,1)
@@ -44,14 +54,14 @@ switch(newCs){
 	var homepage = setInterval(homepage_fn,4000)	
 	break;
 }
-function homepage_fn(){						
-		index++;
-		if(index>=iframe.length)index=0;
-		iframe_none()
-		mouse_over(iframe[index])
-		iframe[index].className = 'on';
-		iframe[index].style.zIndex = indexnum++;
-	}
+// function homepage_fn(){						
+// 		index++;
+// 		if(index>=iframe.length)index=0;
+// 		iframe_none()
+// 		mouse_over(iframe[index])
+// 		iframe[index].className = 'on';
+// 		iframe[index].style.zIndex = indexnum++;
+// 	}
 function set_click(newCs,num){
 	// 清除动画
 	clearInterval(homepage)

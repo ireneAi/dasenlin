@@ -66,7 +66,7 @@ iframe.on {opacity: 1;width:100%;}
 body.about_us{border:0;}
 #about_us {min-height:740px;background: url(../images/about_us.jpg) no-repeat top center; background-size:auto 100% ; }
 .about_us .body_main {position: relative;}
-.main_text {margin:200px 0 0 190px;width:480px;line-height: 32px;color:#000;font-size: 16px;position: relative;}
+.main_text {margin:200px 0 0 190px;width:480px;line-height: 28px;color:#000;font-size: 16px;position: relative;}
 .main_text p{margin-bottom: 8px;text-indent: 32px;}
 .main_text a{float: right;color: #8e181f;text-decoration: underline;}
 .about_us .title{position: absolute;left:-40px;top:-50px;}
@@ -110,18 +110,18 @@ body.about_us{border:0;}
 /*商业模式*/
 body.mode{border:0;}
 #mode {min-height:740px;background: url(../images/mode_bc.png) no-repeat top center; }
-.mode .link {width:730px;margin: 335px auto 0;padding-left: 20px }
-.mode .link li{display: inline-block;width:155px;height: 24px;margin-right: 18px; }
-.mode .link a{
+.mode .link {width: 790px;margin: 350px auto 0;padding-left: 20px }
+.mode .link li{display: inline-block;width: 170px;height: 24px;margin-right: 18px;}
+.mode .link a{position: relative;text-align: center;
 	-webkit-transition:all .2s ease;
 	-ms-transition:all .2s ease;
 	-o-transition:all .2s ease;
 	-moz-transition:all .2s ease;
 	transition:all .2s ease;
-	display: block;width:155px;height: 30px;line-height:30px;padding:0 8px;background:#d96e75;border-radius: 5px;color: #fff; }
+	display: block;width:155px;height: 30px;float:right;line-height:30px;padding:0 8px;background:#d96e75;border-radius: 5px;color: #fff; }
 .mode .link a:hover{background: #8e181f; text-decoration:none;}
 .mode .link a:before{content:'';display: inline-block;height: 20px;width:20px;background: url(../images/nav_mode.png) no-repeat;}
-
+.mode .link a img {position: absolute;width: 90px;top: -111px;left: 29px;}
 /*联系我们*/
 body.contact_us{border:0;}
 #contact_us {min-height:740px;background: url(../images/contact_us.jpg) no-repeat top center; background-size:auto 100% ; }
@@ -129,11 +129,11 @@ body.contact_us{border:0;}
 
 .contact_us .contact_text {position: absolute;left:110px;}
 .address_box {position:relative;border:3px solid #c2212b;border-radius: 20px;margin:258px 0 0 245px; background: rgba(255,255,255,.9);width:748px;height: 258px;box-shadow: 0 0 10px #444;}
-.address_box .map {position:absolute;right:-70px;top:-50px;padding:5px;background: #fff;overflow: hidden;height: 350px;width:350px;border:1px solid #ccc;border-radius: 50% 50%;box-shadow: 0 0 10px #fff;}
+.address_box .map {position:absolute;right:-77px;top: 50%;padding:5px;background: #fff;overflow: hidden;height: 350px;width:350px;border:1px solid #ccc;border-radius: 50% 50%;box-shadow: 0 0 10px #fff;transform: translate(0,-50%);}
 .address_box .map img{width:100%;height: 100%;border:5px solid #fff;border-radius: 50% 50%}
 .address_box address{font-style: normal;padding-left: 40px}
-.address_box address h2{font-size: 24px;color:#8e181f;height: 35px;margin:35px 0 10px;}
-.address_box address p{font-size: 16px;height: 22px;margin-bottom: 8px;}
+.address_box address h2{font-size: 24px;color:#8e181f;height: 35px;margin:20px 0 10px;}
+.address_box address p{font-size: 16px;height: 26px;margin-bottom: 6px;}
 
 /*公司历程*/
 body.process{border:0;}

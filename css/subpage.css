@@ -1,4 +1,4 @@
-/*
+﻿/*
 	@ 2016/4/19
 	@ irene 
  */ 
@@ -43,10 +43,12 @@ main::after {content:'';width:100%;clear:both;height: 1px;zoom:1;display: block;
 .right_main .right_body .logo_main img{margin:0;height: 170px;width:215px;}
 .right_main .right_body .logo_main dd{min-height: 30px;line-height: 24px;text-align: center;margin-top: 10px;}
 
-/*���²�ҵ*/
+/*旗下产业*/
 .qixia{display: block;margin-bottom: 10px;}
 .qixia li{width:50%;display: inline-block;float: left;}
+/*企业文化*/
 
+.right_main .right_body .center_text_img img{ margin:20px 50px;}
 
 .right_main .f16 p {font-size: 16px;line-height: 30px;margin:8px 0;}
 .right_main img.center{margin:15px auto;}
